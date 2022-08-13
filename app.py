@@ -262,6 +262,7 @@ def recommend():
 
     # run example
     if __name__ == "__main__":
+        app.run(host='0.0.0.0', port=5000, debug=False)
         # rating matrix - User X Item : (7 X 5)
         R = SGD_array = np.array(new_final_df)
 
